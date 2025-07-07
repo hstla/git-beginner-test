@@ -1,0 +1,17 @@
+1. git branch feature
+2. touch conflict_test.txt
+3. main conflict_test.txt 내용 추가
+4. git add conflict_test.txt
+5. git commit -m "add main conflict_test.txt line"
+6. git checkout feature
+7. touch conflict_test.txt
+8. feature conflict_test.txt 내용 추가
+9. git add conflict_test.txt
+10. git commit -m "add feature conflict_test.txt line"
+11. git rebase main
+12. 충돌 해결
+13. git add conflict_test.txt
+14. git rebase --continue
+15. git log --oneline
+
+issue_url: https://github.com/hstla/git-beginner-test/issues/3
